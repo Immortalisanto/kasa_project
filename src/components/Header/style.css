@@ -1,0 +1,18 @@
+.link {
+    color: #ff6060;
+    text-decoration: none;
+    padding: 0;
+    margin-left: 57px;
+}
+
+nav {
+    padding-top: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    width: 86%;
+    margin: auto;
+}

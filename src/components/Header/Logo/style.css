@@ -1,0 +1,6 @@
+.logo-red {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 210px;
+}

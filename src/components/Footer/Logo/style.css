@@ -1,0 +1,8 @@
+.logo-white {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 122px;
+    padding-top: 66px;
+    padding-bottom: 30px;
+}
