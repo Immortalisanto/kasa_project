@@ -1,0 +1,15 @@
+.imageAProposBanner {
+    margin-top: 60px;
+    margin-bottom: 45px;
+    width: 86%;
+    object-fit: cover;
+    border-radius: 25px;
+    height: 223px;
+    filter: brightness(80%);
+}
+
+.a-propos-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

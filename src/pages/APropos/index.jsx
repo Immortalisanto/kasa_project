@@ -1,3 +1,9 @@
+import AProposBanner from '../../components/AProposBanner'
+
 export default function APropos() {
-    return <h2>Et ici, c'est la page "A propos" !</h2>
+    return (
+        <section>
+            <AProposBanner />
+        </section>
+    )
 }

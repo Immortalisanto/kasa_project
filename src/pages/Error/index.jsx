@@ -1,3 +1,18 @@
+import './style.css'
+import { Link } from 'react-router-dom'
+
 export default function Error() {
-    return <h2>Oups, la page demandée n'existe pas ! :S</h2>
+    return (
+        <div className="error-div">
+            <p className="code-error">404</p>
+            <p className="error-message">
+                Oups! La page que vous demandez n'existe pas.
+            </p>
+            <Link
+                to="/home"
+                className="home-link-on-error-page">
+                Retourner sur la page d'accueil
+            </Link>
+        </div>
+    )
 }
