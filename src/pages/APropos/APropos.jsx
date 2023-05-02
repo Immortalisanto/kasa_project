@@ -1,4 +1,4 @@
-import AProposBanner from '../../components/AProposBanner'
+import AProposBanner from '../../components/AProposBanner/AProposBanner'
 
 export default function APropos() {
     return (

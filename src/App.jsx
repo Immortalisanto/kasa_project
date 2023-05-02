@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
-import Header from './components/Header'
+import Header from './components/Header/Header'
 import React from 'react'
-import Home from './pages/Home/index'
-import APropos from './pages/APropos/index'
-import Error from './pages/Error/index'
-import Footer from './components/Footer/index'
+import Home from './pages/Home/Home'
+import APropos from './pages/APropos/APropos'
+import Error from './pages/Error/Error'
+import Footer from './components/Footer/Footer'
 
 function App() {
     return (

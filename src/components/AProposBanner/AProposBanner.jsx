@@ -1,4 +1,4 @@
-import './style.css'
+import './AProposBannerStyle.css'
 import aProposBanner from '../../assets/a-propos-banner.png'
 
 export default function AProposBanner() {

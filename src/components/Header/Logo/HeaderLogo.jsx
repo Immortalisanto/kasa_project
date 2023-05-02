@@ -1,12 +1,12 @@
-import a from '../../../assets/desktop/white-logo/a.png'
-import k from '../../../assets/desktop/white-logo/k.png'
-import s from '../../../assets/desktop/white-logo/s.png'
-import House from './House/index'
-import './style.css'
+import a from '../../../assets/desktop/red-logo/a.png'
+import k from '../../../assets/desktop/red-logo/k.png'
+import s from '../../../assets/desktop/red-logo/s.png'
+import House from './House/HouseLogoHeader'
+import './HeaderLogoStyle.css'
 
-export default function Logo() {
+export default function HeaderLogo() {
     return (
-        <div className="logo-white">
+        <div className="logo-red">
             <img
                 src={k}
                 alt="lettre k"

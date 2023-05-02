@@ -1,4 +1,4 @@
-import './style.css'
+import './HomeBannerStyle.css'
 import homeBanner from '../../assets/home-banner.png'
 
 export default function HomeBanner() {
