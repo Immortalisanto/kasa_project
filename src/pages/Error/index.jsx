@@ -9,7 +9,7 @@ export default function Error() {
                 Oups! La page que vous demandez n'existe pas.
             </p>
             <Link
-                to="/home"
+                to="/"
                 className="home-link-on-error-page">
                 Retourner sur la page d'accueil
             </Link>

@@ -9,7 +9,7 @@ export default function Header() {
             <nav>
                 <ul>
                     <Link
-                        to="/home"
+                        to="/"
                         className="link">
                         Accueil
                     </Link>
