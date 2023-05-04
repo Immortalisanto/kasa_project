@@ -3,6 +3,8 @@
     text-decoration: none;
     padding: 0;
     margin-left: 57px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 nav {
@@ -15,4 +17,11 @@ header {
     padding-top: 40px;
     width: 86%;
     margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .link {
+        font-size: 12px;
+        margin-left: 10px;
+    }
 }

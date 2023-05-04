@@ -6,3 +6,15 @@
 .house-red {
     margin-bottom: -5px;
 }
+
+@media screen and (max-width: 767px) {
+    .door-red {
+        width: 5px;
+        margin-left: -11px;
+        margin-right: 6px;
+        margin-bottom: -2px;
+    }
+    .house-red {
+        width: 32px;
+    }
+}

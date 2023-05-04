@@ -10,15 +10,18 @@ export default function HeaderLogo() {
             <img
                 src={k}
                 alt="lettre k"
+                className="letterK"
             />
             <House />
             <img
                 src={s}
                 alt="lettre s"
+                className="letterS"
             />
             <img
                 src={a}
                 alt="lettre a"
+                className="letterA"
             />
         </div>
     )
