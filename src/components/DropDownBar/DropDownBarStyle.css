@@ -1,0 +1,17 @@
+.dropDownButton {
+    background-color: #ff6060;
+    color: white;
+    border: 0;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropDownText {
+    color: #ff6060;
+    background-color: #f6f6f6;
+    margin-top: 0;
+}
