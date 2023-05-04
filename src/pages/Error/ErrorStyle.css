@@ -27,3 +27,18 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media screen and (max-width: 767px) {
+    .code-error {
+        font-size: 96px;
+    }
+
+    .error-message {
+        font-size: 18px;
+    }
+
+    .home-link-on-error-page {
+        margin-top: 130px;
+        font-size: 14px;
+    }
+}
