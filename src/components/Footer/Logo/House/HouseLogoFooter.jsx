@@ -1,5 +1,5 @@
-import house from '../../../../assets/desktop/white-logo/house.png'
-import door from '../../../../assets/desktop/white-logo/door.png'
+import house from '../../../../assets/white-logo/house.png'
+import door from '../../../../assets/white-logo/door.png'
 import './HouseLogoFooterStyle.css'
 
 export default function HouseLogoFooter() {

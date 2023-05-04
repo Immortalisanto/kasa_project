@@ -1,6 +1,6 @@
-import a from '../../../assets/desktop/red-logo/a.png'
-import k from '../../../assets/desktop/red-logo/k.png'
-import s from '../../../assets/desktop/red-logo/s.png'
+import a from '../../../assets/red-logo/a.png'
+import k from '../../../assets/red-logo/k.png'
+import s from '../../../assets/red-logo/s.png'
 import House from './House/HouseLogoHeader'
 import './HeaderLogoStyle.css'
 

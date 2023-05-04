@@ -1,6 +1,6 @@
-import a from '../../../assets/desktop/white-logo/a.png'
-import k from '../../../assets/desktop/white-logo/k.png'
-import s from '../../../assets/desktop/white-logo/s.png'
+import a from '../../../assets/white-logo/a.png'
+import k from '../../../assets/white-logo/k.png'
+import s from '../../../assets/white-logo/s.png'
 import House from './House/HouseLogoFooter'
 import './LogoFooterStyle.css'
 

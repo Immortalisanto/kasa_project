@@ -1,5 +1,5 @@
-import house from '../../../../assets/desktop/red-logo/house.png'
-import door from '../../../../assets/desktop/red-logo/door.png'
+import house from '../../../../assets/red-logo/house.png'
+import door from '../../../../assets/red-logo/door.png'
 import './HouseLogoHeaderStyle.css'
 
 export default function HouseLogoHeader() {
