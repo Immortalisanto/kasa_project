@@ -28,7 +28,7 @@ export default function DropDownBar({ title, description }) {
                 {title}
                 <img
                     src={downArrow}
-                    alt="flèche permettant d'ouvrir un menu déroulant"
+                    alt="flèche permettant de fermer un menu déroulant"
                     className="arrowDropDownBar"
                 />
             </button>
