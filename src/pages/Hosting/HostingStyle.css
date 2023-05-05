@@ -1,0 +1,11 @@
+.hostingPageSection {
+    width: 86%;
+    margin: 20px auto;
+}
+
+.hostingPageImage {
+    object-fit: cover;
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+}
