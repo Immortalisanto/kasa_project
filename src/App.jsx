@@ -5,6 +5,7 @@ import Home from './pages/Home/Home'
 import APropos from './pages/APropos/APropos'
 import Error from './pages/Error/Error'
 import Footer from './components/Footer/Footer'
+import Hosting from './pages/Hosting/Hosting'
 
 function App() {
     return (
@@ -18,6 +19,10 @@ function App() {
                 <Route
                     path="/a-propos"
                     element={<APropos />}
+                />
+                <Route
+                    path="/:title/:id"
+                    element={<Hosting />}
                 />
                 <Route
                     path="*"
