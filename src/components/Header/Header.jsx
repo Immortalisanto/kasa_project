@@ -1,18 +1,11 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Logo from './Logo/HeaderLogo'
 import './HeaderStyle.css'
-import { useState } from 'react'
 
 export default function Header() {
-    const [isActive, setIsActive] = useState('true')
-
-    const toggleClass = (e) => {
-        if (e.target.classList.contains('active')) {
-            return
-        } else {
-            setIsActive(!isActive)
-        }
-    }
+    const location = useLocation()
+    const { pathname } = location
+    const splitLocation = pathname.split('/')
 
     return (
         <header>
@@ -21,14 +14,18 @@ export default function Header() {
                 <ul>
                     <Link
                         to="/"
-                        className={isActive ? 'active link' : 'link'}
-                        onClick={toggleClass}>
+                        className={
+                            splitLocation[1] === '' ? 'active link' : 'link'
+                        }>
                         Accueil
                     </Link>
                     <Link
                         to="/a-propos"
-                        className={!isActive ? 'active link' : 'link'}
-                        onClick={toggleClass}>
+                        className={
+                            splitLocation[1] === 'a-propos'
+                                ? 'active link'
+                                : 'link'
+                        }>
                         A propos
                     </Link>
                 </ul>
