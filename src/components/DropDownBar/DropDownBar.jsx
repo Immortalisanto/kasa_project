@@ -5,33 +5,21 @@ import { useState } from 'react'
 
 export default function DropDownBar({ title, description }) {
     const [isOpen, setIsOpen] = useState(false)
+    let dropDownIcon = isOpen ? topArrow : downArrow
 
-    return isOpen ? (
+    return (
         <div className="dropDownBarConteneur">
             <button
                 className="dropDownButton"
-                onClick={() => setIsOpen(false)}>
+                onClick={() => setIsOpen(!isOpen)}>
                 {title}
                 <img
-                    src={topArrow}
+                    src={dropDownIcon}
                     alt="flèche permettant d'ouvrir un menu déroulant"
                     className="arrowDropDownBar"
                 />
             </button>
-            <p className="dropDownText">{description}</p>
-        </div>
-    ) : (
-        <div className="dropDownBarConteneur">
-            <button
-                className="dropDownButton"
-                onClick={() => setIsOpen(true)}>
-                {title}
-                <img
-                    src={downArrow}
-                    alt="flèche permettant de fermer un menu déroulant"
-                    className="arrowDropDownBar"
-                />
-            </button>
+            {isOpen && <p className="dropDownText">{description}</p>}
         </div>
     )
 }
