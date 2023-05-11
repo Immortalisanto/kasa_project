@@ -25,34 +25,49 @@ export default function Hosting() {
                                 <h4>{hostingPage.location}</h4>
                             </div>
                             <div className="hostNameAndImage">
-                                <p>{hostingPage.host.name}</p>
+                                <p className="hostName">
+                                    {hostingPage.host.name}
+                                </p>
                                 <img
+                                    className="hostImage"
                                     src={hostingPage.host.picture}
                                     alt={hostingPage.host.name}
                                 />
                             </div>
                         </div>
-                        <div className="tag">
-                            {hostingPage.tags.map((tag, index) => (
-                                <p key={`${tag}-${index}`}>{tag}</p>
-                            ))}
+                        <div className="tagListAndStars">
+                            <div className="tagList">
+                                {hostingPage.tags.map((tag, index) => (
+                                    <p
+                                        className="tag"
+                                        key={`${tag}-${index}`}>
+                                        {tag}
+                                    </p>
+                                ))}
+                            </div>
+                            <Stars rating={hostingPage.rating} />
                         </div>
-                        <Stars rating={hostingPage.rating} />
                         <div className="dropDownBarHostingPage">
-                            <DropDownBar
-                                title="Description"
-                                description={hostingPage.description}
-                            />
-                            <DropDownBar
-                                title="Equipements"
-                                description={hostingPage.equipments.map(
-                                    (equipment, index) => (
-                                        <p key={`${equipment}-${index}`}>
-                                            {equipment}
-                                        </p>
-                                    )
-                                )}
-                            />
+                            <div className="dropDownBarLeft">
+                                <DropDownBar
+                                    title="Description"
+                                    description={hostingPage.description}
+                                />
+                            </div>
+                            <div className="dropDownBarRight">
+                                <DropDownBar
+                                    title="Equipements"
+                                    description={hostingPage.equipments.map(
+                                        (equipment, index) => (
+                                            <p
+                                                className="equipment"
+                                                key={`${equipment}-${index}`}>
+                                                {equipment}
+                                            </p>
+                                        )
+                                    )}
+                                />
+                            </div>
                         </div>
                     </section>
                 )

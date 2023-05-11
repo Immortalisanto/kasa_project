@@ -9,3 +9,107 @@
     height: 415px;
     border-radius: 25px;
 }
+
+h3 {
+    color: #ff6060;
+    font-size: 36px;
+    font-weight: 500;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.hostName {
+    color: #ff6060;
+    font-size: 18px;
+    text-align: right;
+    width: 100px;
+}
+
+.hostImage {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    margin-left: 10px;
+}
+
+.hostNameAndImage {
+    display: flex;
+    align-items: center;
+}
+
+.titlesAndHost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 110px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.tag {
+    width: 115px;
+    background-color: #ff6060;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.tagList {
+    display: flex;
+}
+
+.tagListAndStars {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.star {
+    margin-right: 15px;
+}
+
+.dropDownBarHostingPage {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropDownBarHostingPage .dropDownBarConteneur {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.dropDownBarLeft,
+.dropDownBarRight {
+    width: 48%;
+}
+
+.dropDownBarHostingPage .dropDownBarConteneur .dropDownButton {
+    margin-top: 0;
+}
+
+.dropDownBarHostingPage .dropDownBarConteneur .dropDownText {
+    padding: 30px 12px 30px 20px;
+    font-size: 18px;
+}
+
+.equipment {
+    text-align: left;
+    padding-bottom: 2px;
+    margin: 0;
+}

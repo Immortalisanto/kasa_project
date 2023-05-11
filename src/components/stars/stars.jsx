@@ -10,12 +10,14 @@ export default function Stars(props) {
             {range.map((rangeElem) =>
                 rating >= rangeElem ? (
                     <img
+                        className="star"
                         key={rangeElem.toString()}
                         src={redStar}
                         alt="une étoile rouge représentant un score positif de l'habitation"
                     />
                 ) : (
                     <img
+                        className="star"
                         key={rangeElem.toString()}
                         src={greyStar}
                         alt="Une étoile grise, score nul"
