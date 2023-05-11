@@ -19,42 +19,44 @@ export default function Hosting() {
                             src={hostingPage.cover}
                             alt={hostingPage.title}
                         />
-                        <div className="titlesAndHost">
-                            <div className="titleAndLocation">
+                        <div className="flexBox">
+                            <div className="titlesAndTags">
                                 <h3>{hostingPage.title}</h3>
                                 <h4>{hostingPage.location}</h4>
+                                <div className="tagList">
+                                    {hostingPage.tags.map((tag, index) => (
+                                        <p
+                                            className="tag"
+                                            key={`${tag}-${index}`}>
+                                            {tag}
+                                        </p>
+                                    ))}
+                                </div>
                             </div>
-                            <div className="hostNameAndImage">
-                                <p className="hostName">
-                                    {hostingPage.host.name}
-                                </p>
-                                <img
-                                    className="hostImage"
-                                    src={hostingPage.host.picture}
-                                    alt={hostingPage.host.name}
-                                />
-                            </div>
-                        </div>
-                        <div className="tagListAndStars">
-                            <div className="tagList">
-                                {hostingPage.tags.map((tag, index) => (
-                                    <p
-                                        className="tag"
-                                        key={`${tag}-${index}`}>
-                                        {tag}
+                            <div className="hostAndStars">
+                                <div className="hostNameAndImage">
+                                    <p className="hostName">
+                                        {hostingPage.host.name}
                                     </p>
-                                ))}
+                                    <img
+                                        className="hostImage"
+                                        src={hostingPage.host.picture}
+                                        alt={hostingPage.host.name}
+                                    />
+                                </div>
+                                <div className="stars">
+                                    <Stars rating={hostingPage.rating} />
+                                </div>
                             </div>
-                            <Stars rating={hostingPage.rating} />
                         </div>
                         <div className="dropDownBarHostingPage">
-                            <div className="dropDownBarLeft">
+                            <div className="dropDownBar">
                                 <DropDownBar
                                     title="Description"
                                     description={hostingPage.description}
                                 />
                             </div>
-                            <div className="dropDownBarRight">
+                            <div className="dropDownBar">
                                 <DropDownBar
                                     title="Equipements"
                                     description={hostingPage.equipments.map(
