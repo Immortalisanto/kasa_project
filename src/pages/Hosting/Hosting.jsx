@@ -1,6 +1,8 @@
 import { useParams } from 'react-router-dom'
 import { HostingListData } from '../../data/HostingListData'
 import './HostingStyle.css'
+import DropDownBar from '../../components/DropDownBar/DropDownBar'
+import Stars from '../../components/stars/stars'
 
 export default function Hosting() {
     const { id } = useParams()
@@ -31,9 +33,26 @@ export default function Hosting() {
                             </div>
                         </div>
                         <div className="tag">
-                            {hostingPage.tags.map((tag) => (
-                                <p>{tag}</p>
+                            {hostingPage.tags.map((tag, index) => (
+                                <p key={`${tag}-${index}`}>{tag}</p>
                             ))}
+                        </div>
+                        <Stars rating={hostingPage.rating} />
+                        <div className="dropDownBarHostingPage">
+                            <DropDownBar
+                                title="Description"
+                                description={hostingPage.description}
+                            />
+                            <DropDownBar
+                                title="Equipements"
+                                description={hostingPage.equipments.map(
+                                    (equipment, index) => (
+                                        <p key={`${equipment}-${index}`}>
+                                            {equipment}
+                                        </p>
+                                    )
+                                )}
+                            />
                         </div>
                     </section>
                 )

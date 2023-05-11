@@ -19,7 +19,7 @@ export default function DropDownBar({ title, description }) {
                     className="arrowDropDownBar"
                 />
             </button>
-            {isOpen && <p className="dropDownText">{description}</p>}
+            {isOpen && <div className="dropDownText">{description}</div>}
         </div>
     )
 }
