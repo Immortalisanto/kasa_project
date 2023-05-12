@@ -19,7 +19,11 @@ export default function DropDownBar({ title, description }) {
                     className="arrowDropDownBar"
                 />
             </button>
-            {isOpen && <div className="dropDownText">{description}</div>}
+            <div className={`dropDownText ${isOpen ? 'open' : ''}`}>
+                <p className={`text ${isOpen ? '' : 'displayNone'}`}>
+                    {description}
+                </p>
+            </div>
         </div>
     )
 }

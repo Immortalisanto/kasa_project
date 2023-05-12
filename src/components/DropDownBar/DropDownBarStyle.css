@@ -13,5 +13,26 @@
 .dropDownText {
     color: #ff6060;
     background-color: #f6f6f6;
-    margin-top: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    font-weight: 400;
+}
+
+.dropDownText.open {
+    max-height: 500px;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    text-align: left;
+    border-radius: 5px;
+    padding: 20px 20px 15px 20px;
+}
+
+.text {
+    text-align: left;
+    margin: 0;
+}
+
+.text.displayNone {
+    display: none;
 }
