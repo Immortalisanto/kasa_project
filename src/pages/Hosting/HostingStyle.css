@@ -1,13 +1,6 @@
 .hostingPageSection {
     width: 86%;
-    margin: 20px auto;
-}
-
-.hostingPageImage {
-    object-fit: cover;
-    width: 100%;
-    height: 415px;
-    border-radius: 25px;
+    margin: 10px auto;
 }
 
 h3 {
@@ -53,7 +46,7 @@ h4 {
     flex-direction: column;
     justify-content: space-between;
     width: 250px;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .titlesAndTags {
@@ -128,11 +121,6 @@ h4 {
 }
 
 @media screen and (max-width: 767px) {
-    .hostingPageImage {
-        height: 255px;
-        border-radius: 10px;
-    }
-
     .flexBox {
         display: flex;
         flex-direction: column;
@@ -188,9 +176,5 @@ h4 {
     .dropDownBar {
         width: 100%;
         margin-bottom: 15px;
-    }
-
-    footer {
-        margin-top: 0;
     }
 }

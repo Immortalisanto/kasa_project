@@ -13,3 +13,15 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 767px) {
+    .a-propos-banner {
+        margin: 20px auto;
+        height: 111px;
+    }
+
+    .imageAProposBanner {
+        margin-top: 0;
+        height: 111px;
+    }
+}

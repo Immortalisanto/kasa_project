@@ -3,6 +3,7 @@ import { HostingListData } from '../../data/HostingListData'
 import './HostingStyle.css'
 import DropDownBar from '../../components/DropDownBar/DropDownBar'
 import Stars from '../../components/stars/stars'
+import ImageSlider from '../../components/ImageSlider/ImageSlider'
 
 export default function Hosting() {
     const { id } = useParams()
@@ -14,10 +15,9 @@ export default function Hosting() {
                     <section
                         className="hostingPageSection"
                         key={hostingPage.id}>
-                        <img
-                            className="hostingPageImage"
-                            src={hostingPage.cover}
-                            alt={hostingPage.title}
+                        <ImageSlider
+                            slides={hostingPage.pictures}
+                            name={hostingPage.title}
                         />
                         <div className="flexBox">
                             <div className="titlesAndTags">
