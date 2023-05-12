@@ -8,7 +8,10 @@ export default function HostingList() {
             <div className="hostingListConteneur">
                 {HostingListData.map((hosting) => (
                     <article key={hosting.id}>
-                        <Link to={`/${hosting.title}/${hosting.id}`}>
+                        <Link
+                            to={`/${hosting.title.replaceAll(' ', '-')}/${
+                                hosting.id
+                            }`}>
                             <img
                                 className="hostingImage"
                                 src={hosting.cover}
