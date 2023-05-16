@@ -20,9 +20,9 @@ export default function DropDownBar({ title, description }) {
                 />
             </button>
             <div className={`dropDownText ${isOpen ? 'open' : ''}`}>
-                <p className={`text ${isOpen ? '' : 'displayNone'}`}>
+                <div className={`text ${isOpen ? '' : 'displayNone'}`}>
                     {description}
-                </p>
+                </div>
             </div>
         </div>
     )
