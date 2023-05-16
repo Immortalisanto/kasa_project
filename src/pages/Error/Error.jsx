@@ -1,7 +1,12 @@
 import './ErrorStyle.css'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export default function Error() {
+    useEffect(() => {
+        document.title = `Kasa - Page introuvable`
+    }, [])
+
     return (
         <div className="error-div">
             <p className="code-error">404</p>

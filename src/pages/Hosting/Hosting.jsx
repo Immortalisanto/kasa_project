@@ -4,9 +4,16 @@ import './HostingStyle.css'
 import DropDownBar from '../../components/DropDownBar/DropDownBar'
 import Stars from '../../components/stars/stars'
 import ImageSlider from '../../components/ImageSlider/ImageSlider'
+import { useEffect, useRef } from 'react'
 
 export default function Hosting() {
     const { id } = useParams()
+    const hostingName = useRef()
+    const hostingLocation = useRef()
+
+    useEffect(() => {
+        document.title = `Kasa - ${hostingName.current.innerText} - ${hostingLocation.current.innerText}`
+    }, [])
 
     return (
         <main>
@@ -21,8 +28,10 @@ export default function Hosting() {
                         />
                         <div className="flexBox">
                             <div className="titlesAndTags">
-                                <h3>{hostingPage.title}</h3>
-                                <h4>{hostingPage.location}</h4>
+                                <h3 ref={hostingName}>{hostingPage.title}</h3>
+                                <h4 ref={hostingLocation}>
+                                    {hostingPage.location}
+                                </h4>
                                 <div className="tagList">
                                     {hostingPage.tags.map((tag, index) => (
                                         <p
