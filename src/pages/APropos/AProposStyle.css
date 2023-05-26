@@ -1,3 +1,11 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .dropDownBarConteneur {
     width: 70%;
     margin: auto;

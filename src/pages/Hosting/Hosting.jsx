@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { HostingListData } from '../../data/HostingListData'
 import './HostingStyle.css'
 import DropDownBar from '../../components/DropDownBar/DropDownBar'
@@ -9,13 +9,24 @@ import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 
 export default function Hosting() {
-    const { id } = useParams()
+    const { id, title } = useParams()
     const hostingName = useRef()
     const hostingLocation = useRef()
+    const navigate = useNavigate()
+    const idLocation = HostingListData.find((hosting) => hosting.id === id)
+    const titleLocation = HostingListData.find(
+        (hosting) => hosting.title.replaceAll(' ', '-') === title
+    )
 
     useEffect(() => {
-        document.title = `Kasa - ${hostingName.current.innerText} - ${hostingLocation.current.innerText}`
-    }, [])
+        if (idLocation === undefined) {
+            navigate('/*')
+        } else if (titleLocation === undefined) {
+            navigate('/*')
+        } else {
+            document.title = `Kasa - ${hostingName.current.innerText} - ${hostingLocation.current.innerText}`
+        }
+    })
 
     return (
         <div className="flexConteneur">
