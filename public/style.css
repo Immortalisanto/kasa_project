@@ -3,4 +3,13 @@ body {
     font-weight: 500;
     width: 100%;
     margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.flexConteneur {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
